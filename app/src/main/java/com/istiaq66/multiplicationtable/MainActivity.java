@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i=1;i<=10;i++) {
             String result = number + "     X      " + i + "     =      " + number * i;
             list.add(result);
-            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,R.layout.custom_listview,R.id.text,list);
+            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,list);
             lstview.setAdapter(arrayAdapter);
         }
 
